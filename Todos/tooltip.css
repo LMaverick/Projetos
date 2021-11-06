@@ -88,3 +88,68 @@ a{
 
     
 }
+
+.tooltip{
+    margin: auto;
+    background-color: rgb(100, 16, 235);
+    color: white;
+    padding: 1em;
+    border-radius: 10px;
+    width: 350px;
+    clip-path: circle(10% at 90% 20%); /* pra fazer o circulo
+    (10% at 90% 20%) 10% = o tamanho do circulo, 90% = eixo X, 20% = eixo Y*/
+
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+
+
+}
+
+.tooltip:hover{
+    clip-path: circle(100%);
+}
+
+.icon{
+    float: right;
+    font-weight: bold;
+    font-size: 3em;
+    margin-right: 5%;
+    margin-top: 4%;
+
+}
+
+.tooltip:hover span {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.abaixo{
+    margin: auto;
+    background-color: rgb(100, 16, 235);
+    color: white;
+    padding: 1em;
+    border-radius: 10px;
+    width: auto;
+    clip-path: circle(3% at 50% 0%); /* pra fazer o circulo
+    (10% at 90% 20%) 10% = o tamanho do circulo, 90% = eixo X, 20% = eixo Y*/
+
+    transition: all 1.5s ease-in-out;
+    cursor: pointer;
+
+
+}
+
+.abaixo:hover{
+    clip-path: circle(100%);
+}
+
+.abaixo:hover p.icon2 {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+footer{
+    margin: 0px;
+    padding: 0px;
+    
+}
