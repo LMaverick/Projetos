@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+/* Resumo
+    # = id
+    . = class
+    : = pseudo-class
+    ::= pseudo-element
+    > = children (filho)
+*/
+
+body{
+    background-color: lightblue;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+p{
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 1.5em;
+    
+}
+
+h1{ 
+    font-family: Impact;
+    font-size: 5em;
+    font-weight: bolder;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+h2{ 
+    font-family: Impact;
+    font-size: 3em;
+    font-weight: bolder;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.conteudo{
+    background-color: rgba(22, 145, 216, 0.01);
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgba(13, 141, 145, 0.003);
+    width: 500px;
+    height: auto;
+    padding: 25px 10px 25px 10px;
+    margin: auto;
+    
+}
+
+.conteudo:hover{
+    background-color: rgba(22, 145, 216, 0.2);
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgba(13, 141, 145, 0.003);
+    width: 500px;
+    height: auto;
+    padding: 25px 10px 25px 10px;
+    margin: auto;
+    
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.voltar{
+    background-color: rgba(96, 22, 216, 0.3);
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgba(13, 141, 145, 0.003);
+    width: auto;
+    height: auto;
+    padding: 12px;
+
+    
+}
+.voltar:hover{
+    background-color: rgba(96, 22, 216, 0.8);
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgba(13, 141, 145, 0.003);
+    width: auto;
+    height: auto;
+    padding: 12px;
+
+    
+}
+
+
+.load{
+    border:8px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #22a6b3;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    animation: load 1.2s linear infinite;
+    margin: auto;
+
+}
+
+@keyframes load{
+    to { transform: rotate(360deg); }
+}
