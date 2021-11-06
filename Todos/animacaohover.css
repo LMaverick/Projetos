@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+/* Resumo
+    # = id
+    . = class
+    : = pseudo-class
+    ::= pseudo-element
+    > = children (filho)
+*/
+
+body{
+    background-image: linear-gradient(90deg, rgb(19, 82, 124), rgb(39, 54, 190), rgb(20, 22, 165));
+}
+
+
+p{
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 1.5em;
+    
+}
+
+h1{ 
+    font-family: Impact;
+    font-size: 5em;
+    font-weight: bolder;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+h2{ 
+    font-family: Impact;
+    font-size: 3em;
+    font-weight: bolder;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.conteudo{
+    background-color: rgba(22, 145, 216, 0.01);
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgba(13, 141, 145, 0.003);
+    width: 500px;
+    height: auto;
+    padding: 25px 10px 25px 10px;
+    margin: auto;
+    
+}
+
+.conteudo:hover{
+    background-color: rgba(22, 145, 216, 0.2);
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgba(13, 141, 145, 0.003);
+    width: 500px;
+    height: auto;
+    padding: 25px 10px 25px 10px;
+    margin: auto;
+    
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.voltar{
+    background-color: rgba(22, 145, 216, 0.3);
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgba(13, 141, 145, 0.003);
+    width: auto;
+    height: auto;
+    padding: 12px;
+
+    
+}
+.voltar:hover{
+    background-color: rgba(22, 145, 216, 0.8);
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgba(13, 141, 145, 0.003);
+    width: auto;
+    height: auto;
+    padding: 12px;
+
+    
+}
