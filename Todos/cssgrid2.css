@@ -24,6 +24,9 @@ body, ul, li, p {
 
 }
 
+body{
+    margin-bottom: 200px;
+}
 a{
     text-decoration: none;
     color: white;
@@ -90,5 +93,47 @@ img{
     
 }
 
+/* -------------- Grid layout -------------- */
 
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*1fr 1fr 1fr, unidade fracional que divide igualmente, seria algo como 1/3 ou 33,3% pra cada grid*/
+    max-width: 1000px;
+    margin: 0 auto;
+    grid-gap: 20px;
+
+}
+
+.grid1 > div:nth-child( n + 4) /* significa que apartir do item 4 ele faz algo, se colocar somente o numero altera ele diretamente*/{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px; /* funciona igual o padding*/
+    align-items: center;
+
+}
+
+.grid1 > div.anuncio {
+    grid-column: 1; /* pra colocar ele na primeira coluna*/
+    grid-row: 2 / 5; /* o 2 significa onde ela começa, na linha, e o / 5 significa que ela fica até a linha 5*/
+    display: block;
+
+}
+
+@media (max-width: 800px){ /*aqui é a parte responsiva, apartir desse tamanho ele faz essas alterações abaixo para a responsividade*/
+    .grid1{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .grid1 > div:nth-child( n + 4) {
+        display:block;
+    }
+
+    .grid1 > div.anuncio{
+        grid-column:auto;
+        grid-row:auto;
+        
+    }
+
+}
 
