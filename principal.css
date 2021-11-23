@@ -179,20 +179,24 @@ li.nome{
 }
 
 .space div{
-    background-color: rgba(210, 210, 217, 0.6);
+    background-color: rgba(210, 210, 217, .2);
     width: 400px;
     height:400px;
     padding:0px;
     margin:0px;
 
-    border-radius: 20px;
+    border-radius: 30px 1px;
+
+    opacity:80%;
 
 }
 
 .space div:hover{
-    background-color: rgb(210, 210, 217);
-    border-radius: 5px;
+    background-color: var(--cor-texto);
+    border-radius: 2px 50px;
     transition-duration:.6s;
+
+    opacity:100%;
 
 }
 .space div > p{
