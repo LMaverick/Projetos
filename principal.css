@@ -9,7 +9,7 @@
 */
 
 
-
+/* ================================ Variaveis CSS ================================*/
 :root{
 
     --cor-principal: #2F3136;
@@ -29,7 +29,7 @@
 }
 
 
-
+/* ================================ Geral ================================*/
 body{
     background-color: var(--cor-secundaria);
     margin: 0;
@@ -61,38 +61,23 @@ h2{
     text-align: center;
     text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5);
 }
+/* =================================================================================*/
+/* ================================ Header Projetos ================================*/
 
-.conteudo{
-    background-color: var(--cor-fundo1);
-    color: var(--cor-texto2);
-    border-radius: 20px;
-    box-shadow: 3px 3px 3px rgba(120, 145, 13, 0.003);
-    width: 500px;
-    height: auto;
-    padding: 25px 10px 25px 10px;
-    margin: auto;
-    
+.projetos{
+    position: fixed;
+    background-image: linear-gradient(to right, var(--cor-principal), var(--cor-principal), rgba(255, 255, 255, 0.3));
+    width:100%;
+    height: 56px;
+    opacity:99%;
+
+    padding:0;
+    margin:0;
+
+    box-shadow:  0 2px 2px linear rgba(0, 0, 0, 0.8);
+
+    z-index: 100;
 }
-
-.conteudo:hover{
-    background-color: var(--cor-fundo4);
-    color: var(--cor-principal);
-    border-radius: 5px;
-    box-shadow: 3px 3px 3px rgba(120, 145, 13, 0.003);
-    width: 500px;
-    height: auto;
-    padding: 25px 10px 25px 10px;
-    margin: auto;
-    transition-duration:.6s;
-    
-}
-
-a{
-    text-decoration: none;
-    color: var(--cor-texto);
-    font-weight: bolder;
-}
-
 
 ul, li{
     margin:0;
@@ -115,18 +100,7 @@ li{
 
 }
 
-.projetos{
-    position: fixed;
-    background-color: var(--cor-principal);
-    width:100%;
-    height: 56px;
-    opacity:99%;
 
-    padding:0;
-    margin:0;
-
-    box-shadow:  0 2px 2px rgba(0, 0, 0, 0.8);
-}
 
 nav{
     
@@ -157,52 +131,13 @@ li.nome{
 
     padding-top:0px;
     margin-top:0px;
+
+   
 }
 
-.space{
-    background-color: var(--cor-fundo4);
-    width:100%;
-    height: 500px;
 
-    padding:0px;
-    margin:0px;
-    margin-bottom: 20px;
 
-    box-shadow:  0 0 5px rgba(0, 0, 0, 0.8);
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.space div{
-    background-color: rgba(210, 210, 217, .2);
-    width: 400px;
-    height:400px;
-    padding:0px;
-    margin:0px;
-
-    border-radius: 30px 1px;
-
-    opacity:80%;
-
-}
-
-.space div:hover{
-    background-color: var(--cor-texto);
-    border-radius: 2px 50px;
-    transition-duration:.6s;
-
-    opacity:100%;
-
-}
-.space div > p{
-    color: var(--cor-principal);
-}
-
+/* =================================================================================*/
 /* ================================ Fundo animado ================================*/
 .gradiente{
     
@@ -296,3 +231,153 @@ li.nome{
     }
 
 }
+
+
+
+/* =================================================================================*/
+/* ================================ opcoes HTML e CSS ================================*/
+
+.opcoes{
+    position: sticky;
+    top:0;
+    left:0;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2), transparent, var(--cor-principal));
+    width:100%;
+    height: 56px;
+    opacity:99%;
+
+    padding:0;
+    margin:0;
+
+    box-shadow:  0 2px 2px  rgba(0, 0, 0, 0.8);
+
+    z-index: 101;
+}
+
+ul, li{
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+li{
+    margin-left: -15px;
+    margin-right: 20px;
+    padding: 18px;
+    border-radius: 50px;
+    color: var(--cor-texto);
+
+}
+
+
+
+nav.opcoes{
+    
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: end;
+    align-items: center;
+
+}
+
+
+a.topo > li:hover{
+    background-color: var(--cor-texto2);
+    color:var(--cor-principal);
+    height: auto;
+    border-radius: 5px;
+    transition-duration: .8s;
+
+}
+
+
+/* =================================================================================*/
+/* ================================ Main Space ================================*/
+/* =================================================================================*/
+
+.space{
+    background-color: var(--cor-fundo4);
+    width:100%;
+    height: 500px;
+
+    padding:0px;
+    margin:0px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.space div{
+    background-color: rgba(210, 210, 217, .2);
+    width: 400px;
+    height:400px;
+    padding:0px;
+    margin:0px;
+
+    border-radius: 30px 1px;
+
+    opacity:80%;
+
+}
+
+.space div:hover{
+    background-color: var(--cor-texto);
+    border-radius: 2px 50px;
+    transition-duration:.6s;
+
+    opacity:100%;
+
+}
+.space div > p{
+    color: var(--cor-principal);
+}
+
+
+/* =================================================================================*/
+/* ================================ Conteudo ================================*/
+
+.conteudo{
+    background-color: var(--cor-fundo1);
+    color: var(--cor-texto2);
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgba(120, 145, 13, 0.003);
+    width: 500px;
+    height: auto;
+    padding: 25px 10px 25px 10px;
+    margin: auto;
+    
+}
+
+.conteudo:hover{
+    background-color: var(--cor-fundo4);
+    color: var(--cor-principal);
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(120, 145, 13, 0.003);
+    width: 500px;
+    height: auto;
+    padding: 25px 10px 25px 10px;
+    margin: auto;
+    transition-duration:.6s;
+    
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: bolder;
+}
+
+
