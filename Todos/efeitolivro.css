@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+
+
+.voltar a{
+    text-decoration: none;
+    color: white;
+}
+.voltar{
+    padding: 12px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.3);
+    margin: 20px;
+    width: auto;
+    height: auto;
+    
+    position: fixed;
+    top: 0;
+    left:0;
+}    
+
+/* ============================================================================= */
+
+body{
+    margin:0;
+    padding:0;
+    background: #90ee90;
+    font-family: sans-serif;
+
+}
+
+.card{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 428px;
+    background: white;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%) perspective(2000px);
+    box-shadow: inset 300px 0px 50px rgba(0, 0, 0, .5), 0px 20px 100px rgba(0, 0, 0, .5);
+    transition: 1s;
+
+}
+
+.card:hover{
+    transform: translate(-50%, -50%) perspective(2000px);
+    box-shadow: inset 20px 0px 50px rgba(0, 0, 0, .5), 0px 20px 100px rgba(0, 0, 0, .5);
+
+}
+
+.card:before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    width:100%;
+    height: 5px;
+    background: #475b02;
+    transform-origin: bottom;
+    transform: skewX(-45deg);
+
+}
+
+.card:after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: -5px;
+    width:5px;
+    height: 100%;
+    background: #7ea301;
+    transform-origin: left;
+    transform: skewY(-45deg);
+
+}
+
+.card .capa{
+    width:100%;
+    height: 100%;
+    position: relative;
+    transform-origin: left;
+    transition: 1s;
+
+}
+.card:hover .capa{
+    transform: rotateY(-135deg);
+
+}
+.capa{
+    background: white;
+    z-index: 1;
+    margin-top: -20px;
+}
+
+.card .detalhes{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing:border-box;
+    padding: 20px;
+    z-index:-100;
+
+}
+
+
+
+
+
+
+
+
