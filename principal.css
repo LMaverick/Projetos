@@ -310,10 +310,13 @@ nav.subirtop{
     background: var(--cor-texto2);
     border-radius: 50%;
     z-index: 1000;
+    overflow: hidden;
 
+    cursor:pointer;
     opacity:80%;
     transition: 0.3s ease;
 }
+
 nav.subirtop:hover{
     
     background: var(--cor-texto);
