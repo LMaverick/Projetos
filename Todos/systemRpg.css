@@ -1,0 +1,82 @@
+
+
+@charset "UTF-8";
+
+.voltar a{
+    text-decoration: none;
+    color: white;
+}
+.voltar{
+    padding: 12px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.3);
+    margin: 50px;
+    width: auto;
+    height: auto;
+    
+
+}    
+
+/* ============================================================================= */
+
+/*
+
+
+#BFA89B
+
+
+
+
+*/
+
+:root{
+    --cor1: #734951 ;
+    --cor2: #F2E9D8 ;
+    --cor3: #BFA89B ;
+    --cor4: #8C6961 ;
+    --cor5: #592727 ;
+    --cor6: #FF322B ;
+    --cor7: #583894 ;
+    --cor8: #AD93DE ;
+    --cor9: #000000 ;
+
+}
+
+body{
+    background: var(--cor2)
+
+}
+
+/* =====================================*/
+/* ====== botão next ======*/
+
+button{
+    font: inherit;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.next{
+    display:inline-block;
+    margin:1em;
+    padding: .5em 1em;
+    text-decoration: none;
+    background-color: var(--cor6);
+    color: var(--cor2);
+    border:0;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+    border-radius: 0.5em;
+    box-shadow: 2px 2px 0px 1px #930;
+
+    transition: box-shadow 0.3s ease, transform 0.3s ease
+
+}
+
+.next:active{
+    box-shadow: 0 0 0 0 #930, inset 3px 3px 3px #930;
+    transform: translate(3px, 3px);
+
+}
+
+/* =====================================*/
