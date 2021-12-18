@@ -48,8 +48,8 @@ body{
     display:flex;
     justify-content:center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     margin-top: 15px;
 
 }
@@ -151,3 +151,19 @@ button{
 .step:target{
     display:block;
 }
+
+/* =====================================*/
+
+.opt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(167, 127, 118, 0.5) ;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 15px;
+    
+}
+
+/* =====================================*/
