@@ -12,9 +12,9 @@
     
     </head>
     <body>   
-        <!-- <div class="voltar" style="display: inline; margin-top: 20px;">
+        <div class="voltar" style="display: inline; margin-top: 20px;">
             <a href="../index.html"> Voltar </a>
-        </div> -->
+        </div> 
         <h1 class="title"> Ficha de RPG Básica</h1>
 
         <a href="#step1"><button class="next" onclick="sumir()" id="sumir">Começar</button></a>
@@ -33,12 +33,15 @@
         <div class="step" id="step2">
             <div class="contain">
                 <h2>Qual a raça do seu personagem?</h2>
-                <a href="#step2"><button class="next" onclick="pegarNome()">Humano </button></a>
-                <p> Humano tem bonus em: Constituição (Resistência) </p>
-                <a href="#step2"><button class="next" onclick="pegarNome()">Elfo </button></a>
-                <p> Elfo tem bonus em: Destreza (Velocidade) </p>
-                <a href="#step2"><button class="next" onclick="pegarNome()">Anão </button></a>
-                <p> Anão tem bonus em: Força </p>
+
+                <a href="#step2"><button class="next" onclick="pegarRaca(this.value)" value="Humano" id="Humano" >Humano </button></a>
+                <p> Humano tem bônus em: Constituição (Resistência) </p>
+
+                <a href="#step2"><button class="next" onclick="pegarRaca(this.value)" value="Elfo">Elfo </button></a>
+                <p> Elfo tem bônus em: Destreza (Velocidade) </p>
+
+                <a href="#step2"><button class="next" onclick="pegarRaca()" id="Anão">Anão </button></a>
+                <p> Anão tem bônus em: Força </p>
                 
             </div>
         </div>
