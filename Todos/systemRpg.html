@@ -29,35 +29,47 @@
             </div>
         </div>
 
-        <!-- classe -->
+        <!-- raça -->
         <div class="step" id="step2">
             <div class="contain">
                 <h2>Qual a raça do seu personagem?</h2>
 
-                <a href="#step2"><button class="next" onclick="pegarRaca(this.value)" value="Humano" id="Humano" >Humano </button></a>
+                <a href="#step3"><button class="next" onclick="pegarRaca(this.value)" value="Humano">Humano </button></a>
                 <p> Humano tem bônus em: Constituição (Resistência) </p>
 
-                <a href="#step2"><button class="next" onclick="pegarRaca(this.value)" value="Elfo">Elfo </button></a>
+                <a href="#step3"><button class="next" onclick="pegarRaca(this.value)" value="Elfo">Elfo </button></a>
                 <p> Elfo tem bônus em: Destreza (Velocidade) </p>
 
-                <a href="#step2"><button class="next" onclick="pegarRaca()" id="Anão">Anão </button></a>
+                <a href="#step3"><button class="next" onclick="pegarRaca(this.value)" value="Anão">Anão </button></a>
                 <p> Anão tem bônus em: Força </p>
                 
+               
             </div>
         </div>
-
-
-        <div class="step" id="step1">
+        
+        <!-- classe -->
+        <div class="step" id="step2">
             <div class="contain">
-                <h2>Qual o nome do seu personagem?</h2>
-                <input type="text" name="nome" id="nome">
-                <a href="#step2"><button class="next" onclick="pegarNome()">Continuar </button></a>
+                <h2>Qual a classe do seu personagem?</h2>
+
+                <a href="#step3"><button class="next" onclick="pegarRaca(this.value)" value="Humano">Humano </button></a>
+                <p> Humano tem bônus em: Constituição (Resistência) </p>
+
+                <a href="#step3"><button class="next" onclick="pegarRaca(this.value)" value="Elfo">Elfo </button></a>
+                <p> Elfo tem bônus em: Destreza (Velocidade) </p>
+
+                <a href="#step3"><button class="next" onclick="pegarRaca(this.value)" value="Anão">Anão </button></a>
+                <p> Anão tem bônus em: Força </p>
+                
+               
             </div>
         </div>
 
+      
 
     
 
+        <!-- ===================================== -->
         <script src="systemRpg.js"></script>
     </body>
     </html>

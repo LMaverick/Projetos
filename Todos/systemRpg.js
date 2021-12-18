@@ -41,11 +41,18 @@ function sumir(){
 //==============================================================
 
 function pegarRaca(letra){
-    person[1] = document.getElementById('humano').onclick
-    alert(`sua raça é: ${person[1]}`)
+    person[1] = letra
+    let status = [100, 0, 0, 0, 0, 0, 0, 0]
+
+    if (person[1] == 'Humano'){
+        status[5] += 2 // aumenta a constituição
+
+    } else if (person[1] == 'Elfo'){
+        status[4] += 2  // aumenta a destreza
+        
+    } else if (person[1] == 'Anão'){
+        status[3] += 2 // aumenta a velocidade
+        
+    }
 
 }
-var letra = function clickTeclado(letra) {
-    document.getElementById('qTeclado').onClick = letra;
-    alert(letra);
-    }
