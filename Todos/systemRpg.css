@@ -44,23 +44,43 @@
 }
 
 body{
-    background: var(--cor2)
+    background: var(--cor2);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 
 }
 
+.title{
+    text-align: center;
+    font-size: 2.2em;
+    text-shadow:1px 1px 2px var(--cor1);
+    padding: 10px;
+
+}
+
+.sumir{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+
+}
 /* =====================================*/
 /* ====== botão next ======*/
 
 button{
     font: inherit;
-    font-size: 1.1em;
+    font-size: 1.2em;
     cursor: pointer;
 }
 
 .next{
     display:inline-block;
-    margin:1em;
-    padding: .5em 1em;
+    margin:0.3em;
+    padding: .5em 1.3em;
     text-decoration: none;
     background-color: var(--cor6);
     color: var(--cor2);
@@ -80,3 +100,52 @@ button{
 }
 
 /* =====================================*/
+
+.contain{
+    display:flex;
+    flex-direction: column;
+    background: var(--cor4);
+    justify-content:center;
+    align-items: center;
+    width: 500px;
+    height: auto;
+    border-radius: 10px 5px;
+    box-shadow: 2px 2px 5px var(--cor3);
+    padding: 10px 5px 15px 5px;
+
+}
+
+.contain h2{
+    display: block;
+    font-size: 1.8em;
+    text-shadow:1px 1px 5px var(--cor2);
+    padding: 10px;
+}
+
+.contain input{
+    width: 400px;
+    font-size: 1.4em;
+    border-radius: 5px;
+
+}
+
+.contain p{
+    color: var(--cor2);
+    text-align: center;
+    font-size: 1.2em;
+    text-shadow:1px 1px 2px var(--cor1);
+    padding: 10px;
+    
+
+}
+
+
+/* =====================================*/
+
+.step{
+    display:none;
+}
+
+.step:target{
+    display:block;
+}

@@ -10,11 +10,29 @@
      humano
  */
 
-if (nome.lenght == 0){
-    var pri = getElementById
-}
+ //==============================================================
+
+let person = ['', 'raca', 'classe']
+
+
+//==============================================================
 
 function pegarNome(){
-        var nome = document.getElementById('#nome')
-        alert('O nome é: ' + String(nome))
+    person[0] = document.getElementById('nome').value
+
+    if (person[0].length == 0){
+        var inserirNome = document.getElementById('inserirNome').style.opacity="0";
+    } else {
+        var inserirNome = document.getElementById('inserirNome').style.opacity="1";
+    
     }
+}
+
+setInterval(pegarNome, 2000)
+//==============================================================
+
+function sumir(){
+    var sumir = document.getElementById('sumir').remove()
+}
+
+//==============================================================
