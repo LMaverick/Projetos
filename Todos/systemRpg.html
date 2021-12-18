@@ -53,57 +53,90 @@
                 <h2>Qual a classe do seu personagem?</h2>
                 <!-- combatentes ================================ -->
                 <div class="opt">
-                    <a href="#step3"><button class="next" onclick="pegarClasse(this.value)" value="Cavaleiro">Cavaleiro </button></a>
+                    <a href="#step4"><button class="next" onclick="pegarClasse(this.value)" value="Cavaleiro">Cavaleiro </button></a>
                     <p> Status <br> Força: 4 | Destreza: 5 | Constituição: 3 |<br> Inteligência: 2 | Sabedoria: 3  | Carisma: 1  </p>
                 </div>
                
                 
                 <div class="opt">
-                    <a href="#step3"><button class="next" onclick="pegarClasse(this.value)" value="Bárbaro">Bárbaro </button></a>
+                    <a href="#step4"><button class="next" onclick="pegarClasse(this.value)" value="Bárbaro">Bárbaro </button></a>
                     <p> Status <br> Força: 5 | Destreza: 3 | Constituição: 5 |<br> Inteligência: 1 | Sabedoria: 4  | Carisma: 0  </p>
                 </div>
                 
                 <div class="opt">
-                    <a href="#step3"><button class="next" onclick="pegarClasse(this.value)" value="Lutador">Lutador </button></a>
+                    <a href="#step4"><button class="next" onclick="pegarClasse(this.value)" value="Lutador">Lutador </button></a>
                     <p> Status <br> Força: 6 | Destreza: 5 | Constituição: 3 |<br> Inteligência: 1 | Sabedoria: 1  | Carisma: 2  </p>
                 </div>
 
                 <!-- Magos, monge e healer =====================-->
 
                 <div class="opt">
-                    <a href="#step3"><button class="next" onclick="pegarClasse(this.value)" value="Clérigo">Clérigo </button></a>
+                    <a href="#step4"><button class="next" onclick="pegarClasse(this.value)" value="Clérigo">Clérigo </button></a>
                     <p> Status <br> Força: 2 | Destreza: 1 | Constituição: 4 |<br> Inteligência: 5 | Sabedoria: 4  | Carisma: 2  </p>
                 </div>
                 
                 <div class="opt">
-                    <a href="#step3"><button class="next" onclick="pegarClasse(this.value)" value="Mago">Mago </button></a>
+                    <a href="#step4"><button class="next" onclick="pegarClasse(this.value)" value="Mago">Mago </button></a>
                     <p> Status <br> Força: 1 | Destreza: 2 | Constituição: 1 |<br> Inteligência: 7 | Sabedoria: 6  | Carisma: 1  </p>
                     
                 </div>
 
                 <div class="opt">
-                    <a href="#step3"><button class="next" onclick="pegarClasse(this.value)" value="Sacerdotiza">Sacerdotiza </button></a>
+                    <a href="#step4"><button class="next" onclick="pegarClasse(this.value)" value="Sacerdotiza">Sacerdotiza </button></a>
                     <p> Status <br> Força: 1 | Destreza: 1 | Constituição: 1 |<br> Inteligência: 4 | Sabedoria: 6  | Carisma: 5  </p>
                 </div>
                 
                 <!-- especial ====================== -->
                 <div class="opt">
-                    <a href="#step3"><button class="next" onclick="pegarClasse(this.value)" value="Ninja">Ninja </button></a>
+                    <a href="#step4"><button class="next" onclick="pegarClasse(this.value)" value="Ninja">Ninja </button></a>
                     <p> Status <br> Força: 4 | Destreza: 6 | Constituição: 1 |<br> Inteligência: 4 | Sabedoria: 3  | Carisma: 0  </p>
                 </div>
                 
                 
                 <div class="opt">
-                    <a href="#step3"><button class="next" onclick="pegarClasse(this.value)" value="Samurai">Samurai </button></a>
+                    <a href="#step4"><button class="next" onclick="pegarClasse(this.value)" value="Samurai">Samurai </button></a>
                     <p> Status <br> Força: 4 | Destreza: 3 | Constituição: 3 |<br> Inteligência: 3 | Sabedoria: 5  | Carisma: 0  </p>
                 </div>
                 
                 <div class="opt">
-                    <a href="#step3"><button class="next" onclick="pegarClasse(this.value)" value="Feiticeiro">Feiticeiro </button></a>
+                    <a href="#step4"><button class="next" onclick="pegarClasse(this.value)" value="Feiticeiro">Feiticeiro </button></a>
                     <p> Status <br> Força: 2 | Destreza: 1 | Constituição: 4 |<br> Inteligência: 7 | Sabedoria: 3  | Carisma: 1  </p>
                 </div>
                 
                 
+            </div>
+        </div>
+
+        <!-- papel no grupo -->
+        <div class="step" id="step4">
+            <div class="contain">
+                <h2>Se seu personagem se juntasse a um grupo, qual papel ele gostaria de fazer?</h2>
+
+                <div class="opt">
+                    <a href="#step5"><button class="next" onclick="papelGrupo(this.value)" value="DPS">DPS </button></a>
+                    <p> Dano Por Segundo: focado em atacar e dar o máximo de dano no menor tempo </p>
+                </div>
+
+                <div class="opt">
+                    <a href="#step5"><button class="next" onclick="papelGrupo(this.value)" value="Tank">Tank </button></a>
+                    <p> Tank: focado em receber dano e aguentar tudo, o centro das atenções dos inimigos </p>
+                </div>
+
+                <div class="opt">
+                    <a href="#step5"><button class="next" onclick="papelGrupo(this.value)" value="Suporte">Suporte </button></a>
+                    <p> Suporte: Ajuda com cura, aumentando dano ou defesa do grupo, qualquer coisa que fortaleça um aliado ou enfraqueça um inimigo </p>
+                </div>  
+               
+               
+            </div>
+        </div>
+
+        <!-- Finalizado -->
+        <div class="step" id="step5">
+            <div class="contain">
+                <h2 id="Fnome">| Nome:   | Raça:   |<br>| Classe:   | Grupo:  |</h2>
+                <p id="status"> Status <br> Força:  | Destreza:  | Constituição:  |<br> Inteligência:  | Sabedoria:   | Carisma:   </p>
+
             </div>
         </div>
 
