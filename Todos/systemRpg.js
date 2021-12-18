@@ -41,6 +41,7 @@ function sumir(){
     var sumir = document.getElementById('sumir').remove()
 }
 
+
 //==============================================================
 //pega a raça do personagem e armazena no array "person"
 
@@ -168,6 +169,7 @@ function papelGrupo(grupo){
         status[5] += 1 
         status[6] += 1 
         status[7] += 1 
+        finalizar()
     } else if (person[3] == 'Tank'){
         status[2] += 1 
         status[3] += 1 
@@ -175,6 +177,7 @@ function papelGrupo(grupo){
         status[5] += 1 
         status[6] += 1 
         status[7] += 1 
+        finalizar()
     } else if (person[3] == 'Suport'){
         status[2] += 1 
         status[3] += 1 
@@ -182,6 +185,7 @@ function papelGrupo(grupo){
         status[5] += 2 
         status[6] += 2 
         status[7] += 1  
+        finalizar()
     }
 
 }
@@ -190,5 +194,23 @@ function papelGrupo(grupo){
 // Finaliza e mostra o status
 
 function finalizar(){
+    var Fnome = document.getElementById('Fnome')
+    var Fstatus = document.getElementById('Fstatus')
+
+    status[1] = status[5] *2
+
+
+    Fnome.innerHTML = `| Nome: ${person[0]} | Raça: ${person[1]} |<br>| Classe: ${person[2]} | Grupo: ${person[3]}|`
+
+    Fstatus.innerHTML = `Status <br>| Vigor: ${status[0]} | Mana: ${status[1]} |<br>| Força: ${status[2]} | Destreza:${status[3]} | Constituição: ${status[4]} |<br>| Inteligência: ${status[5]} | Sabedoria: ${status[6]} | Carisma: ${status[7]} |`
     
+}
+
+//==============================================================
+// opção de refazer
+
+function reflesh(){
+    status = [100, 0, 0, 0, 0, 0, 0, 0]
+    person = ['', 'raca', 'classe', 'grupo']
+
 }
