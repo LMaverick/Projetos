@@ -184,13 +184,13 @@ p.Fstatus{
 }
 
 /* =====================================*/
-/* RESPONSIVIDADE */
+/* RESPONSIVIDADE 600px*/
 
-@media (max-width: 658px){
+@media (max-width: 600px){
     
 .title{
     text-align: center;
-    font-size: 1.7em;
+    font-size: 1.2em;
     text-shadow:1px 1px 2px var(--cor1);
     padding: 10px;
 
@@ -202,7 +202,7 @@ p.Fstatus{
 
 button{
     font: inherit;
-    font-size: 1.1em;
+    font-size: 1.6em;
     cursor: pointer;
 }
 
@@ -236,7 +236,7 @@ button{
     background: var(--cor4);
     justify-content:center;
     align-items: center;
-    max-width: 400px;
+    max-width: 580px;    
     height: 100%;
     border-radius: 10px 5px;
     box-shadow: 2px 2px 5px var(--cor3);
@@ -291,3 +291,114 @@ p.Fstatus{
 }
 
 }
+
+
+
+/* =====================================*/
+/* RESPONSIVIDADE 200px*/
+
+@media (max-width: 320px){
+    
+    .title{
+        text-align: center;
+        font-size: 1.1em;
+        text-shadow:1px 1px 2px var(--cor1);
+        padding: 10px;
+    
+    }
+    
+    
+    /* =====================================*/
+    /* ====== botão next ======*/
+    
+    button{
+        font: inherit;
+        font-size: 1.2em;
+        cursor: pointer;
+    }
+    
+    .next{
+        display:inline-block;
+        margin:0.3em;
+        padding: .5em 1.3em;
+        text-decoration: none;
+        background-color: var(--cor6);
+        color: var(--cor2);
+        border:0;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+        border-radius: 0.5em;
+        box-shadow: 2px 2px 0px 1px #930;
+    
+        transition: box-shadow 0.3s ease, transform 0.3s ease
+    
+    }
+    
+    .next:active{
+        box-shadow: 0 0 0 0 #930, inset 3px 3px 3px #930;
+        transform: translate(3px, 3px);
+    
+    }
+    
+    /* =====================================*/
+    
+    .contain{
+        display:flex;
+        flex-direction: column;
+        background: var(--cor4);
+        justify-content:center;
+        align-items: center;
+        max-width: 280px;    
+        height: 100%;
+        border-radius: 10px 5px;
+        box-shadow: 2px 2px 5px var(--cor3);
+        padding: 10px 5px 15px 5px;
+        margin-top: 15px;
+    
+    }
+    
+    .contain h2{
+        display: block;
+        font-size: 1.2em;
+        text-shadow:1px 1px 5px var(--cor2);
+        padding: 10px;
+    }
+    
+    .contain input{
+        max-width: 200px;
+        font-size: 1.4em;
+        border-radius: 5px;
+    
+    }
+    
+    .contain p{
+        color: var(--cor2);
+        text-align: center;
+        font-size: 1.2em;
+        text-shadow:1px 1px 2px var(--cor1);
+        padding: 10px;
+        font-weight: bolder;
+    
+    }
+    
+    
+    
+    /* =====================================*/
+    
+    h2.Fnome{
+        display: block;
+        text-align: justify;
+        font-size: 1.6em;
+        text-shadow:1px 1px 5px var(--cor2);
+        padding: 10px;
+    }
+    
+    p.Fstatus{
+        color: var(--cor2);
+        text-align: justify;
+        font-size: 1.4em;
+        text-shadow:1px 1px 2px var(--cor1);
+        padding: 10px;
+        font-weight: bolder;
+    }
+    
+    }
