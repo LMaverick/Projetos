@@ -237,7 +237,7 @@ button{
     justify-content:center;
     align-items: center;
     max-width: 580px;    
-    height: 100%;
+    height: auto;
     border-radius: 10px 5px;
     box-shadow: 2px 2px 5px var(--cor3);
     padding: 10px 5px 15px 5px;
@@ -348,7 +348,7 @@ p.Fstatus{
         justify-content:center;
         align-items: center;
         max-width: 280px;    
-        height: 100%;
+        height: auto;
         border-radius: 10px 5px;
         box-shadow: 2px 2px 5px var(--cor3);
         padding: 10px 5px 15px 5px;
