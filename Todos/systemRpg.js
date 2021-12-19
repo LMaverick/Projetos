@@ -178,7 +178,7 @@ function papelGrupo(grupo){
         status[6] += 1 
         status[7] += 1 
         finalizar()
-    } else if (person[3] == 'Suport'){
+    } else if (person[3] == 'Suporte'){
         status[2] += 1 
         status[3] += 1 
         status[4] += 1 
